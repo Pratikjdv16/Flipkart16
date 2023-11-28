@@ -1,0 +1,1063 @@
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+  font-family: sans-serif;
+  color: #212121;
+}
+
+#payment {
+  display: flex;
+  background: #f1f3f6;
+  width: 100%;
+  height: fit-content;
+}
+
+#paymentBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 75rem;
+  height: fit-content;
+  /* border: 1px solid red; */
+  padding: 0.7rem;
+  margin: 0.7rem 0rem;
+}
+
+/* Payment Information Div */
+/* Address Section */
+.payment-section {
+  display: flex;
+  background-color: white;
+  border: 0.06rem solid #e0e0e0;
+  border-radius: 0.12rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  width: 45rem;
+  height: fit-content;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.payment-leftDiv {
+  width: 33rem;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.payment-heading {
+  color: #878787;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 100%;
+  height: 1.37rem;
+  margin-bottom: 0.5rem;
+}
+
+.payment-info {
+  font-size: 0.9rem;
+  width: 100%;
+  height: fit-content;
+}
+
+.payment-rightDiv {
+  display: flex;
+  justify-content: center;
+  width: 9rem;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.payment-rightDiv button {
+  color: #2874f0;
+  background: white;
+  border: 0.06rem solid #e0e0e0;
+  border-radius: 0.12rem;
+  font-size: 0.87rem;
+  text-transform: uppercase;
+  width: 7.5rem;
+  height: 2.5rem;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* Address Edit Section */
+.payment-editDiv-headingDiv {
+  display: flex;
+  align-items: center;
+  background: #2874f0;
+  border-radius: 0.12rem 0.12rem 0rem 0rem;
+  width: 45rem;
+  height: 2.5rem;
+  /* border: 1px solid black; */
+}
+
+.payment-editDiv-heading {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 2rem;
+}
+
+.address-editDiv {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 2fr;
+  gap: 1.4rem;
+  background: #f5faff;
+  border: 0.06rem solid #e0e0e0;
+  border-radius: 0.12rem;
+  width: 45rem;
+  height: fit-content;
+  padding: 1.5rem 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 2.43rem;
+  /* margin: 1rem 0rem; */
+}
+
+.addressBox {
+  position: relative;
+  grid-row: 3;
+  grid-column: 1 / 3;
+  height: 4.86rem;
+}
+
+.inputField {
+  color: #1c1e21;
+  background-color: white;
+  border: 0.06rem solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 15px;
+  text-transform: capitalize;
+  width: 100%;
+  height: 100%;
+  padding: 11px;
+  outline: none;
+}
+
+.error_icon {
+  position: absolute;
+  right: 6px;
+  width: 19px;
+  height: 19px;
+  margin-right: 6px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.addressBox .error_icon {
+  top: 1.8rem;
+}
+
+.inputField::placeholder {
+  color: grey;
+}
+
+.input-box p {
+  color: #e26340;
+  position: absolute;
+  top: 2.6rem;
+  left: 0.2rem;
+  font-size: 0.75rem;
+  width: fit-content;
+  height: 1rem;
+}
+
+.addressBox p {
+  color: #e26340;
+  position: absolute;
+  top: 5rem;
+  left: 0.2rem;
+  font-size: 0.75rem;
+  width: fit-content;
+  height: 1rem;
+}
+
+.btnBox {
+  height: 3.2rem;
+}
+
+.input-box button {
+  border: 0.06rem solid #e0e0e0;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  padding: 11px;
+  cursor: pointer;
+}
+
+.save {
+  color: white;
+  background-color: #fb641b;
+}
+
+.cancel {
+  color: #2874f0;
+  background-color: white;
+}
+
+/* ------------------------------------------------------------------ */
+
+.payment-editDiv {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  /* border: 0.06rem solid #e0e0e0; */
+  border-radius: 0.12rem;
+  width: 45rem;
+  height: fit-content;
+}
+
+/* Payment Edit Div */
+.payment-productInfo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: white;
+  border-radius: 0.25rem;
+  width: 100%;
+  height: 13.62rem;
+  padding: 1.2rem;
+}
+
+/* payment-productInfo-productSection */
+.payment-productInfo-productSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: fit-content;
+}
+
+.payment-productInfo-productSection:hover {
+  color: #2874f0;
+}
+
+/* productImg */
+.payment-productInfo-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 7rem;
+  height: fit-content;
+}
+
+.payment-productInfo-img {
+  max-width: 7rem;
+  max-height: 7rem;
+}
+
+/* productInfo */
+.payment-productInfo {
+  width: 30.43rem;
+  height: fit-content;
+  padding: 0rem 1.5rem;
+}
+
+.payment-productInfo-productName {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+  font-size: 1rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.payment-productInfo-productRatings {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: grey;
+  font-size: 0.87rem;
+  width: fit-content;
+  height: 1.25rem;
+  margin-top: 0.37rem;
+}
+
+.payment-productInfo-price-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 11.56rem;
+  height: fit-content;
+}
+
+.payment-productInfo-productPrice-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  height: 1.68rem;
+  margin-top: 1.12rem;
+}
+
+.payment-productInfo-realPrice {
+  color: grey;
+  font-size: 0.87rem;
+  text-decoration: line-through;
+  width: 3rem;
+  height: 1.18rem;
+  margin-right: 0.62rem;
+}
+
+.payment-productInfo-discountPrice {
+  color: black;
+  font-size: 1.12rem;
+  width: 4.12rem;
+  height: 1.56rem;
+  margin-right: 0.62rem;
+}
+
+.payment-productInfo-discountPercentage {
+  color: rgb(38, 165, 65);
+  font-size: 0.93rem;
+  width: 3.31rem;
+  height: 1.18rem;
+}
+
+.flipkart-assured-img-div {
+  width: 4.81rem;
+  height: 1.31rem;
+}
+
+.flipkart-assured-img {
+  margin-left: 0.37rem;
+  width: 3.43rem;
+  height: 0.93rem;
+}
+
+.payment-productInfo-outOfStock-div {
+  width: 28.93rem;
+  height: 1.75rem;
+}
+
+.payment-productInfo-outOfStock {
+  color: #ff6161;
+  font-size: 1.25rem;
+  margin-top: 0.37rem;
+}
+
+/* payment-productInfo-save-remove */
+.payment-productInfo-save-remove {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.payment-productInfo-quantity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 7rem;
+  height: 1.75rem;
+}
+
+.payment-productInfo-quantity button {
+  background: white;
+  border: 0.06rem solid #c2c2c2;
+  border-radius: 1rem;
+  font-size: 1rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.payment-productInfo-quantity span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.06rem solid #c2c2c2;
+  font-size: 1rem;
+  width: 2.87rem;
+  height: 1.75rem;
+  padding: 0.18rem 0.37rem;
+}
+
+.payment-productInfo-remove {
+  display: flex;
+  align-items: center;
+  color: #212121;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  width: fit-content;
+  height: 50%;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.payment-productInfo-remove img {
+  display: none;
+}
+
+.payment-productInfo-remove:hover {
+  color: #2874f0;
+}
+
+/* payment-productInfo-continue */
+/* .payment-productInfo-continue {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: white;
+  box-shadow: 0rem -0.12rem 0.62rem 0 rgb(0 0 0 / 0.1);
+  width: 45rem;
+  height: 5.25rem;
+  padding: 1.12rem;
+  margin-bottom: 0.7rem;
+}
+
+.payment-productInfo-continue-btn {
+  color: white;
+  background: #fb641b;
+  border: 0.06rem solid #fb641b;
+  border-radius: 0.12rem;
+  font-size: 1rem;
+  width: 15.62rem;
+  height: 3.18rem;
+} */
+
+/* payment-mobile-tablet-laptop-productInfo-continue */
+.payment-productInfo-continue {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  bottom: 0rem;
+  background: white;
+  box-shadow: 0rem -0.12rem 0.62rem 0 rgb(0 0 0 / 0.1);
+  width: 45rem;
+  height: 5.25rem;
+  padding: 1.12rem;
+  margin-bottom: 0.7rem;
+  z-index: 1;
+}
+
+.payment-productInfo-continue-btn {
+  color: white;
+  background: #fb641b;
+  border: 0.06rem solid #fb641b;
+  border-radius: 0.12rem;
+  font-size: 1rem;
+  width: 15.62rem;
+  height: 3.18rem;
+}
+
+/* ------------------------------------------------- */
+
+.payment-options {
+  display: flex;
+  align-items: center;
+  border-top: 0.06rem solid #f0f0f0;
+  height: 3.12rem;
+  padding: 1rem 1.56rem;
+}
+
+#cashOnDelivery {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.payment-options label {
+  margin-left: 1rem;
+}
+
+/* Payment Edit section */
+.captchaDiv {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.captcha-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.06rem solid #e0e0e0;
+  border-radius: 0.12rem;
+  width: 11.56rem;
+  height: 3rem;
+}
+
+.captchaDiv p {
+  display: flex;
+  justify-content: space-around;
+  color: green;
+  font-style: italic;
+  font-size: 2.9rem;
+  font-family: ui-serif;
+  letter-spacing: 0.2rem;
+}
+
+.captchaDiv input {
+  font-size: 2rem;
+  padding: 0rem 0.5rem;
+  outline: none;
+}
+
+.captcha-inputBox {
+  position: relative;
+}
+
+.captcha-inputBox img {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  margin-right: 0rem;
+}
+
+.captcha-inputBox p {
+  color: #e26340;
+  position: absolute;
+  top: 3.1rem;
+  left: 0.2rem;
+  font-size: 0.75rem;
+  font-style: unset;
+  font-family: unset;
+  width: fit-content;
+  height: 1rem;
+  letter-spacing: 0rem;
+}
+
+.captcha-items::placeholder {
+  color: #878787;
+  font-size: 1rem;
+}
+
+.captchaBtn {
+  color: white;
+  border: none;
+  background-color: #fb641b;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 11.56rem;
+  height: 3rem;
+}
+
+/* ------------------------------------------------- */
+
+/* Payment Price-div */
+.paymentPrice-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 4.6rem;
+  width: 24.87rem;
+  height: 25.43rem;
+  margin-left: 1rem;
+  /* border: 1px solid black; */
+}
+
+/* payment-priceDetails */
+.payment-priceDetails-section {
+  background: white;
+  border-bottom: 0.06rem solid #f0f0f0;
+  border-radius: 0.12rem;
+  box-shadow: 0rem 0.06rem 0.06rem 0rem rgba(0, 0, 0, 0.2);
+  width: 23rem;
+  height: 20.37rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.payment-priceDetails-div {
+  display: flex;
+  align-items: center;
+  color: #878787;
+  border-bottom: 0.06rem solid #f0f0f0;
+  font-size: 1rem;
+  width: 20rem;
+  height: 2.32rem;
+  margin: 0rem;
+}
+
+.payment-priceDetails-div span {
+  color: #878787;
+}
+
+.payment-priceDetails-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  height: 1.4rem;
+  margin: 1.25rem 0rem;
+}
+
+.payment-priceDetails-discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  height: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.payment-priceDetails-discount-price {
+  color: #388e3c;
+}
+
+.payment-priceDetails-deliveryCharges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  height: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.payment-priceDetails-deliveryCharges-price {
+  color: #388e3c;
+}
+
+.payment-priceDetails-totalAmount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.06rem dashed #e0e0e0;
+  border-bottom: 0.06rem dashed #e0e0e0;
+  font-size: 1.12rem;
+  width: 20rem;
+  height: 3.26rem;
+}
+
+.payment-priceDetails-savePrice-para {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #388e3c;
+  width: 20em;
+  height: 2.95rem;
+  margin-top: 0.75rem;
+}
+
+.payment-priceDetails-savePrice-para span {
+  color: #388e3c;
+}
+
+/* ----------------------------------------------------------- */
+
+/* payment-safe-secure-div */
+.payment-safe-secure-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f3f6;
+  font-size: 0.87rem;
+  width: 23rem;
+  height: 3.81rem;
+  margin-top: 1.25rem;
+}
+
+.payment-safe-secure-img {
+  width: 1.56rem;
+  height: 2rem;
+  margin-left: 0.93rem;
+}
+
+.payment-safe-secure-para {
+  color: #878787;
+  margin-left: 0.62rem;
+}
+
+@media (max-width: 1200px) {
+  #paymentBox {
+    justify-content: center;
+    width: 62rem;
+  }
+
+  .payment-section {
+    width: 43rem;
+  }
+
+  .payment-editDiv-headingDiv {
+    width: 43rem;
+  }
+
+  .address-editDiv {
+    width: 43rem;
+  }
+
+  .payment-editDiv {
+    width: 43rem;
+  }
+
+  .payment-productInfo-continue {
+    width: 43rem;
+  }
+
+  .payment-priceDetails-section {
+    width: 18rem;
+  }
+
+  .payment-priceDetails-div {
+    font-size: 1rem;
+    width: 15rem;
+  }
+
+  .payment-priceDetails-price {
+    width: 15rem;
+  }
+
+  .payment-priceDetails-discount {
+    width: 15rem;
+  }
+
+  .payment-priceDetails-deliveryCharges {
+    width: 15rem;
+  }
+
+  .payment-priceDetails-totalAmount {
+    font-size: 1.12rem;
+    width: 15rem;
+  }
+
+  .payment-priceDetails-savePrice-para {
+    width: 15em;
+  }
+
+  .payment-safe-secure-div {
+    font-size: 0.87rem;
+    width: 18rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #paymentBox {
+    flex-direction: column;
+    align-items: center;
+    width: 48rem;
+  }
+
+  .payment-section {
+    width: 47rem;
+  }
+
+  .payment-editDiv-headingDiv {
+    width: 47rem;
+  }
+
+  .payment-leftDiv {
+    width: 35rem;
+  }
+
+  .address-editDiv {
+    width: 47rem;
+  }
+
+  .payment-editDiv {
+    width: 47rem;
+  }
+
+  .payment-productInfo-continue {
+    width: 47rem;
+  }
+
+  /* payment-div */
+  .payment-div {
+    justify-content: flex-start;
+    box-shadow: none;
+    width: 48rem;
+    height: 30.1rem;
+    padding-top: 0.5rem;
+    margin-left: 0rem;
+  }
+
+  /* payment-priceDetails */
+  /* Payment Price-div */
+  .paymentPrice-div {
+    width: 47rem;
+    margin-left: 0rem;
+  }
+
+  .payment-priceDetails-section {
+    width: 47rem;
+  }
+
+  .payment-priceDetails-div {
+    font-size: 1rem;
+    width: 44rem;
+  }
+
+  .payment-priceDetails-price {
+    width: 44rem;
+  }
+
+  .payment-priceDetails-discount {
+    width: 44rem;
+  }
+
+  .payment-priceDetails-deliveryCharges {
+    width: 44rem;
+  }
+
+  .payment-priceDetails-totalAmount {
+    font-size: 1.12rem;
+    width: 44rem;
+  }
+
+  .payment-priceDetails-savePrice-para {
+    width: 44em;
+  }
+
+  /* payment-safe-secure-div */
+  .payment-safe-secure-div {
+    justify-content: center;
+    font-size: 0.87rem;
+    width: 47rem;
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #paymentBox {
+    flex-direction: column;
+    align-items: center;
+    width: 37rem;
+  }
+
+  .payment-section {
+    width: 36rem;
+  }
+
+  .payment-editDiv-headingDiv {
+    width: 36rem;
+  }
+
+  .payment-leftDiv {
+    width: 24rem;
+  }
+
+  .address-editDiv {
+    width: 36rem;
+  }
+
+  .payment-editDiv {
+    width: 36rem;
+  }
+
+  .payment-productInfo {
+    width: fit-content;
+  }
+
+  .payment-productInfo-continue {
+    width: 36rem;
+  }
+
+  /* payment-div */
+  .payment-div {
+    justify-content: flex-start;
+    box-shadow: none;
+    width: 37rem;
+    height: 30.1rem;
+    padding-top: 0.5rem;
+    margin-left: 0rem;
+  }
+
+  /* payment-priceDetails */
+  .paymentPrice-div {
+    width: 36rem;
+  }
+
+  .payment-priceDetails-section {
+    width: 36rem;
+  }
+
+  .payment-priceDetails-div {
+    font-size: 1rem;
+    width: 33rem;
+  }
+
+  .payment-priceDetails-price {
+    width: 33rem;
+  }
+
+  .payment-priceDetails-discount {
+    width: 33rem;
+  }
+
+  .payment-priceDetails-deliveryCharges {
+    width: 33rem;
+  }
+
+  .payment-priceDetails-totalAmount {
+    font-size: 1.12rem;
+    width: 33rem;
+  }
+
+  .payment-priceDetails-savePrice-para {
+    width: 33rem;
+  }
+
+  .payment-safe-secure-div {
+    font-size: 0.87rem;
+    width: 36rem;
+  }
+
+  .payment-productInfo-save span {
+    color: grey;
+    text-transform: none;
+    font-size: 1rem;
+    height: 100%;
+  }
+
+  .payment-productInfo-save img {
+    display: inline-block;
+  }
+
+  .payment-productInfo-remove span {
+    color: grey;
+    text-transform: none;
+    font-size: 1rem;
+    height: 100%;
+  }
+
+  .payment-productInfo-remove img {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 600px) {
+  #paymentBox {
+    flex-direction: column;
+    align-items: center;
+    width: 24rem;
+  }
+
+  .payment-section {
+    width: 23rem;
+  }
+
+  .payment-editDiv-headingDiv {
+    width: 23rem;
+  }
+
+  .payment-leftDiv {
+    width: 12.5rem;
+  }
+
+  .payment-heading {
+    font-size: 0.97rem;
+  }
+
+  .payment-rightDiv {
+    width: 7.5rem;
+  }
+
+  .address-editDiv {
+    display: inline-block;
+    width: 23rem;
+  }
+
+  .input-box {
+    margin-bottom: 1rem;
+  }
+
+  .addressBox {
+    margin-bottom: 1rem;
+  }
+
+  .payment-editDiv {
+    width: 23rem;
+  }
+
+  .payment-editDiv-heading {
+    font-size: 0.97rem;
+  }
+
+  .payment-productInfo-continue {
+    justify-content: center;
+    width: 23rem;
+  }
+
+  .payment-productInfo-continue-btn {
+    width: 20rem;
+  }
+
+  /* Payment Edit section */
+  .captchaDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .captcha-items {
+    width: 15.56rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .captchaDiv input {
+    padding: 0rem 3rem;
+  }
+
+  /* payment-div */
+  .payment-div {
+    margin-left: 0rem;
+    width: 24rem;
+  }
+
+  /* payment-priceDetails */
+  .paymentPrice-div {
+    width: 23rem;
+  }
+
+  .payment-priceDetails-section {
+    width: 23rem;
+  }
+
+  .payment-priceDetails-div {
+    font-size: 0.97rem;
+    width: 20rem;
+  }
+
+  .payment-priceDetails-price {
+    font-size: 0.9rem;
+    width: 20rem;
+  }
+
+  .payment-priceDetails-discount {
+    font-size: 0.9rem;
+    width: 20rem;
+  }
+
+  .payment-priceDetails-deliveryCharges {
+    font-size: 0.9rem;
+    width: 20rem;
+  }
+
+  .payment-priceDetails-totalAmount {
+    width: 20rem;
+  }
+
+  .payment-priceDetails-savePrice-para {
+    width: 20rem;
+  }
+
+  /* payment-safe-secure-div */
+  .payment-safe-secure-div {
+    justify-content: flex-start;
+    font-size: 0.87rem;
+    width: 23rem;
+  }
+}

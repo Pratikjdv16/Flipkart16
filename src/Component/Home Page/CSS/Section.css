@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+/* Section */
+#section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 8rem;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+
+#sectionBox {
+  display: flex;
+  box-shadow: 0rem 0.06rem 0.06rem 0rem rgba(0, 0, 0, 0.16);
+  justify-content: center;
+  align-items: center;
+  width: 75rem;
+  height: 8rem;
+  /* border: 1px solid black; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#sectionBox::-webkit-scrollbar {
+  width: 0rem;
+  height: 0rem;
+}
+
+.section-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 7.12rem;
+  height: 7rem;
+  /* border: 1px solid black; */
+}
+
+.section-class a {
+  color: black;
+  font-size: 0.87rem;
+  text-decoration: none;
+}
+
+.section-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.25rem;
+  height: 6.25rem;
+  cursor: pointer;
+}
+
+/* section-img */
+.section-img {
+  max-width: 4rem;
+  max-height: 4rem;
+}
+
+/* section-name */
+.section-class-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 1rem;
+}
+
+.section-class-name span {
+  font-size: 0.87rem;
+  padding-right: 0.3rem;
+}
+
+.section-class-name svg {
+  transform: rotate(0deg) rotate(270deg);
+  width: 0.6rem;
+  height: 0.6rem;
+  /* z-index: -1; */
+}
+
+/* Fashion */
+#fashion-div:hover .section-class-name svg {
+  transition: 0.5s ease-in-out;
+  transform: rotate(0deg) rotate(90deg);
+}
+
+/* Electronics */
+#electronics-div:hover .section-class-name svg {
+  transition: 0.5s ease-in-out;
+  transform: rotate(0deg) rotate(90deg);
+}
+
+/* Home */
+#home-div:hover .section-class-name svg {
+  transition: 0.5s ease-in-out;
+  transform: rotate(0deg) rotate(90deg);
+}
+
+/* Beauty Toy and More */
+#toys-baby-div:hover .section-class-name svg {
+  transition: 0.5s ease-in-out;
+  transform: rotate(0deg) rotate(90deg);
+}
+
+/* Two Wheelers */
+#two-wheelers-div:hover .section-class-name svg {
+  transition: 0.5s ease-in-out;
+  transform: rotate(0deg) rotate(90deg);
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+  /* Section */
+  #sectionBox {
+    justify-content: flex-start;
+    width: 62rem;
+  }
+
+  .section-class {
+    width: 7.12rem;
+  }
+
+  .section-class a {
+    font-size: 0.87rem;
+  }
+
+  .section-image-div {
+    width: 6.25rem;
+  }
+
+  /* section-img */
+  .section-img {
+    max-width: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Section */
+  #sectionBox {
+    width: 48rem;
+    justify-content: flex-start;
+  }
+
+  .section-class {
+    width: 5.99rem;
+  }
+
+  .section-class-name {
+    width: 5.9rem;
+  }
+
+  .section-class a {
+    font-size: 0.8rem;
+  }
+
+  .section-image-div {
+    width: 5.99rem;
+  }
+
+  /* section-img */
+  .section-img {
+    max-width: 4rem;
+  }
+
+  .section-class-name span {
+    font-size: 0.87rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Section */
+  #section {
+    height: 7.5rem;
+  }
+
+  #sectionBox {
+    justify-content: flex-start;
+    width: 37rem;
+    height: 7.5rem;
+  }
+
+  .section-class {
+    width: 5.99rem;
+    height: 6.5rem;
+  }
+
+  .section-class a {
+    font-size: 0.8rem;
+  }
+
+  .section-image-div {
+    width: 5.99rem;
+    height: 5.7rem;
+  }
+
+  /* section-img */
+  .section-img {
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+  }
+
+  .section-class-name span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Section */
+  #section {
+    height: 6.5rem;
+  }
+
+  #sectionBox {
+    justify-content: flex-start;
+    box-shadow: none;
+    width: 24rem;
+    height: 6rem;
+  }
+
+  .section-class {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .section-class-name {
+    width: 5rem;
+  }
+
+  .section-class a {
+    font-size: 0.8rem;
+  }
+
+  .section-image-div {
+    width: 5rem;
+    height: 4rem;
+  }
+
+  /* section-img */
+  .section-img {
+    max-width: 3rem;
+    max-height: 3rem;
+  }
+
+  .section-class-name span {
+    font-size: 0.8rem;
+  }
+
+  .section-class-name svg {
+    display: none;
+  }
+}

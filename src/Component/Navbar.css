@@ -1,0 +1,638 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar-Section */
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0rem;
+  z-index: 2;
+  background: #2874f0;
+  width: 100%;
+  height: 3.75rem;
+  /* border: 1px solid red; */
+}
+
+#navbarBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75rem;
+  height: 3.75rem;
+  /* border: 2px solid black; */
+}
+
+.navbar-class {
+  color: white;
+  height: 2.81rem;
+}
+
+/* FlipKart-logo*/
+#flipkart-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 8.25rem;
+  height: 3.12rem;
+  /* border: 1px solid black; */
+}
+
+#flipkart-logo-top-text {
+  color: white;
+  text-align: center;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: italic;
+  font-size: 1.37rem;
+  font-weight: 600;
+  width: 5.31rem;
+  height: 1.56rem;
+}
+
+#flipkart-logo-bottom-text {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: italic;
+  font-size: 0.68rem;
+}
+
+#plus {
+  color: yellow;
+  font-weight: bold;
+}
+
+#flipkart-logo-image {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+/* Search-Input */
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+#Search-input {
+  border: none;
+  font-size: 15px;
+  outline: none;
+  width: 38rem;
+  height: 2.37rem;
+  padding: 0.93rem;
+  border-radius: 0.12rem;
+  /* border: 0.06rem solid green; */
+  text-transform: lowercase;
+}
+
+#search-image-btn {
+  position: absolute;
+  right: 0rem;
+  background: white;
+  border-radius: 0.12rem;
+  width: 2.37rem;
+  height: 2.37rem;
+  border: none;
+}
+
+#search-image-btn img {
+  color: #2e78f0;
+  /* border: 0.12rem solid red; */
+  padding: 0.62rem;
+  height: 2.37rem;
+  width: 2.37rem;
+}
+
+/* Recent-search-div */
+#recent-search-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  /* border: 0.06rem solid red; */
+  box-shadow: 0rem 0.25rem 1rem 0rem rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 2.5rem;
+  width: 38rem;
+  max-height: 22.12rem;
+  z-index: -1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#recent-search-div::-webkit-scrollbar {
+  width: 0rem;
+  height: 0rem;
+}
+
+.recent-search-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  /* border: 0.06rem solid grey; */
+  list-style: none;
+  width: 100%;
+  height: 2.87rem;
+}
+
+.recent-search-items a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.recent-search-items a img {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin-left: 0.75rem;
+}
+
+.recent-search-items a span {
+  color: black;
+  font-size: 0.87rem;
+  margin-left: 0.75rem;
+}
+
+/* Login-button */
+.login-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  cursor: pointer;
+  height: 100%;
+}
+
+.login-link:hover .login-hover {
+  display: flex;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: fit-content;
+  height: 2rem;
+  color: #2e78f0;
+  border-radius: 0.12rem;
+  background-color: white;
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 600;
+  padding: 1.13rem 2.3rem;
+}
+
+.login-hover {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  /* border: 0.06rem solid red; */
+  border-radius: 0.12rem;
+  box-shadow: 0rem 0.25rem 1rem 0rem rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 3.75rem;
+  width: fit-content;
+  height: fit-content;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.triangle-img {
+  position: fixed;
+  top: 3rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.login-hover-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 0.06rem solid grey; */
+  border-top: 0.06rem solid #f0f0f0;
+  font-size: 0.87rem;
+  width: fit-content;
+  height: 2.93rem;
+  padding: 0rem 1rem;
+}
+
+.login-hover-items:hover {
+  background: #b1b1b12e;
+}
+
+.login-hover-items a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.login-hover-items a span {
+  margin-left: 0.75rem;
+}
+
+.login-hover-items span {
+  color: black;
+  font-size: 0.87rem;
+}
+
+/* More */
+#more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  /* border: 1px solid black; */
+  cursor: pointer;
+  height: 100%;
+}
+
+#more:hover .moreOption-hover {
+  display: flex;
+}
+
+#moreOption:hover svg {
+  transition: 0.5s ease-in-out;
+  transform: rotate(0deg) rotate(90deg);
+}
+
+#moreOption {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background: #2874f0;
+  border: none;
+  font-weight: 500;
+  font-size: 0.93rem;
+  width: 3.75rem;
+  height: 1.25rem;
+}
+
+#moreOption span {
+  color: white;
+}
+
+#moreOption img {
+  display: none;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+#moreOption svg {
+  transform: rotate(0deg) rotate(270deg);
+}
+
+.moreOption-hover {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3.75rem;
+  background: white;
+  /* border: 0.06rem solid red; */
+  border-radius: 0.12rem;
+  box-shadow: 0rem 0.25rem 1rem 0rem rgba(0, 0, 0, 0.2);
+  width: 15rem;
+  height: fit-content;
+  z-index: 2;
+}
+
+.moreOption-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 0.06rem solid #f0f0f0;
+  /* border: 0.06rem solid grey; */
+  list-style: none;
+  width: 15rem;
+  height: 3.13rem;
+  padding: 1rem 0.75rem;
+}
+
+.moreOption-items:hover {
+  background: #b1b1b12e;
+}
+
+.moreOption-items span {
+  color: black;
+  font-size: 0.87rem;
+  margin-left: 0.75rem;
+}
+
+/* Cart */
+#cart-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+#cart-image {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.cartCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #ff6161;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+#cart-text {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Media Query =============================================================================================*/
+@media (max-width: 1200px) {
+  #navbarBox {
+    width: 62rem;
+  }
+
+  /* Search-Input */
+  #Search-input {
+    width: 29.5rem;
+  }
+
+  /* Recent-search-div */
+  #recent-search-div {
+    width: 29.5rem;
+  }
+
+  /* More */
+  .moreOption-hover {
+    width: 13.5rem;
+  }
+
+  .moreOption-items {
+    width: 13.5rem;
+    padding: 1rem 0.75rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbarBox {
+    width: 48rem;
+  }
+
+  #flipkart-logo {
+    height: 3rem;
+  }
+
+  #flipkart-logo-top-text {
+    font-size: 1.2rem;
+    width: 4.31rem;
+  }
+
+  #flipkart-logo-bottom-text {
+    font-size: 0.6rem;
+  }
+
+  #flipkart-logo-image {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  /* Search-Input */
+  #Search-input {
+    width: 24rem;
+  }
+
+  /* Recent-search-div */
+  #recent-search-div {
+    width: 24rem;
+  }
+
+  /* Login-button */
+  .login-btn {
+    color: white;
+    background-color: transparent;
+    padding: 1.13rem 0.5rem;
+  }
+
+  /* More */
+  .moreOption-hover {
+    width: 13rem;
+  }
+
+  .moreOption-items {
+    width: 13rem;
+    padding: 1rem 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 7.5rem;
+  }
+
+  #navbarBox {
+    width: 37rem;
+  }
+
+  #flipkart-logo-top-text {
+    font-size: 1.2rem;
+    width: 4.31rem;
+  }
+
+  #flipkart-logo-bottom-text {
+    font-size: 0.6rem;
+  }
+
+  #flipkart-logo-image {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  #search {
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  #Search-input {
+    width: 35.1rem;
+  }
+
+  /* Login-button */
+  .login-hover {
+    top: 3.8rem;
+  }
+
+  /* More */
+  #moreOption {
+    width: 2rem;
+  }
+
+  #moreOption img {
+    display: inline-block;
+  }
+
+  #moreOption span {
+    display: none;
+  }
+
+  #moreOption svg {
+    display: none;
+  }
+
+  .moreOption-hover {
+    top: 3.8rem;
+    width: 13rem;
+  }
+
+  .moreOption-items {
+    width: 13rem;
+    padding: 1rem 0.75rem;
+  }
+
+  /* Cart */
+  #cart-text {
+    display: none;
+  }
+
+  .cartCount {
+    right: 0rem;
+  }
+
+  /* Recent-search-div */
+  #recent-search-div {
+    width: 35.12rem;
+    top: 2.5rem;
+  }
+
+  .recent-search-items {
+    height: 3rem;
+  }
+
+  .recent-search-items a {
+    height: 2.8rem;
+  }
+
+  .recent-search-items a img {
+    max-width: 1.9rem;
+    max-height: 1.9rem;
+  }
+
+  .recent-search-items span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    height: 7.5rem;
+  }
+
+  #navbarBox {
+    width: 24rem;
+  }
+
+  #flipkart-logo-top-text {
+    font-size: 1.2rem;
+    width: 4.31rem;
+  }
+
+  #flipkart-logo-bottom-text {
+    font-size: 0.6rem;
+  }
+
+  #flipkart-logo-image {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  #Search-input {
+    width: 22.5rem;
+  }
+
+  /* Login-button */
+  .login-btn {
+    padding: 1.13rem 0.5rem;
+  }
+
+  .login-hover-items {
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+
+  .login-hover-items span {
+    font-size: 0.8rem;
+  }
+
+  /* More */
+  .moreOption-hover {
+    width: 11rem;
+  }
+
+  .moreOption-items {
+    width: 11rem;
+    height: 2rem;
+    padding: 0.2rem 0.75rem;
+  }
+
+  .moreOption-items span {
+    font-size: 0.7rem;
+  }
+
+  /* Recent-search-div */
+  #recent-search-div {
+    width: 22.5rem;
+  }
+
+  .recent-search-items a img {
+    max-width: 1.8rem;
+    max-height: 1.8rem;
+  }
+
+  .recent-search-items span {
+    font-size: 0.7rem;
+  }
+}

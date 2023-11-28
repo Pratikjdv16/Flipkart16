@@ -1,0 +1,582 @@
+#product-list2 {
+  background: white;
+  width: 100%;
+  height: fit-content;
+  padding: 1.56rem;
+  margin: 0.62rem;
+  margin-left: 0rem;
+  margin-top: 3rem;
+  border: 0.06rem solid #e0e0e0;
+  /* border: 1px solid black; */
+}
+
+#product-list2-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 52.4rem;
+  height: 13.54rem;
+  margin: 2rem 0rem;
+  border-bottom: 0.06rem solid #e0e0e0;
+  /* border: 1px solid black; */
+}
+
+#product-list2-box:hover .product-list2-productName {
+  color: #2874f0;
+}
+
+/* Product-list2-left-div */
+.product-list2-left-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;
+  height: 13.43rem;
+  /* border: 1px solid black; */
+}
+
+.product-list2-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 13rem;
+  height: 13.43rem;
+  /* border: 1px solid black; */
+}
+
+.product-list2-img {
+  max-width: 12rem;
+  max-height: 11rem;
+}
+
+/* Product-list2-middle-div */
+.product-list2-middle-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 24rem;
+  height: 13.43rem;
+  padding-left: 0.62rem;
+  /* border: 1px solid black; */
+}
+
+.product-list2-productName {
+  color: black;
+  font-weight: 500;
+  font-size: 1.06rem;
+  width: 22.56rem;
+  height: fit-content;
+}
+
+.product-list2-productRatings {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: grey;
+  font-size: 0.87rem;
+  width: 22.56rem;
+  height: fit-content;
+  margin-top: 0.37rem;
+}
+
+.product-list2-productRatings-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #388e3c;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-size: 0.71rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 0rem 0.37rem 0.12rem 0.37rem;
+  margin-right: 0.4rem;
+}
+
+.product-list2-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0.87rem;
+  list-style-type: unset;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 0.81rem;
+  overflow-y: scroll;
+}
+
+.product-list2-description::-webkit-scrollbar {
+  height: 0rem;
+}
+
+/* Product-list2-right-div */
+.product-list2-right-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 15.2rem;
+  height: 14.43rem;
+  padding-left: 0.62rem;
+  /* border: 1px solid black; */
+}
+
+/* Product-list2-right-top-div */
+.product-list2-right-top-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 12.56rem;
+  height: fit-content;
+}
+
+.product-list2-productPrice-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 6.31rem;
+  height: 4.5rem;
+  margin-right: 0.62rem;
+}
+
+.product-list2-discountPrice {
+  font-size: 1.56rem;
+  width: fit-content;
+  height: 1.56rem;
+}
+
+.product-list2-price-discountPer-para {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 6.31rem;
+  height: 0.93rem;
+}
+
+.product-list2-realPrice {
+  color: grey;
+  font-size: 0.87rem;
+  text-decoration: line-through;
+  width: fit-content;
+  height: 1.5rem;
+  padding-top: 0.62rem;
+}
+
+.product-list2-discountPercentage {
+  color: rgb(38, 165, 65);
+  font-size: 0.81rem;
+  width: fit-content;
+  height: 0.93rem;
+}
+
+.product-list2-delivery {
+  font-size: 0.75rem;
+  width: 4.37rem;
+  height: 0.93rem;
+}
+
+.product-list2-flipkart-assured-img-div {
+  width: fit-content;
+  margin-top: 0.5rem;
+  margin-left: 0.4rem;
+  height: 1.31rem;
+}
+
+.product-list2-flipkart-assured-img {
+  width: 4.81rem;
+  height: 1.31rem;
+}
+
+.price-list2-bottom-div {
+  width: 13.5rem;
+  height: fit-content;
+}
+
+.product-list2-exchange-para {
+  font-size: 0.87rem;
+  width: 13.5rem;
+  height: fit-content;
+  margin-top: 0.31rem;
+}
+
+.product-list2-exchange-price {
+  font-weight: 600;
+}
+
+.product-list2-bank-offer {
+  color: rgb(38, 165, 65);
+  font-weight: 600;
+  font-size: 0.87rem;
+  width: 13.5rem;
+  height: 0.87rem;
+  margin-top: 0.31rem;
+}
+
+/* product-list2-mobile-tablet-laptop-box--------------------------------------------------------- */
+#product-list2-mobile-tablet-laptop-box {
+  display: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 43.45rem;
+  height: 15.54rem;
+  padding: 1.5rem 0rem;
+  border-bottom: 0.06rem solid #e0e0e0;
+  /* border: 1px solid black; */
+}
+
+#product-list2-mobile-tablet-laptop-box:hover
+  .product-list2-mobile-tablet-laptop-productName {
+  color: #2874f0;
+}
+
+/* Product-list2-left-div */
+.product-list2-mobile-tablet-laptop-left-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 14rem;
+  height: 12.43rem;
+  /* border: 1px solid black; */
+}
+
+.product-list2-mobile-tablet-laptop-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
+  height: fit-content;
+  /* border: 1px solid black; */
+}
+
+.product-list2-mobile-tablet-laptop-img {
+  max-width: 12rem;
+  max-height: 10rem;
+}
+
+/* Product-list2-middle-div */
+.product-list2-mobile-tablet-laptop-middle-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 31.4rem;
+  height: fit-content;
+  padding-left: 0.8rem;
+  /* border: 1px solid black; */
+}
+
+.product-list2-mobile-tablet-laptop-productName {
+  color: black;
+  font-weight: 500;
+  font-size: 1.06rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.product-list2-mobile-tablet-laptop-productInfo-productRatings {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  color: grey;
+  font-size: 0.87rem;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 0.37rem;
+}
+
+.product-list2-mobile-tablet-laptop-productRatings-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #388e3c;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  width: 2.5rem;
+  height: fit-content;
+  padding: 0rem 0.37rem 0.12rem 0.37rem;
+  margin-right: 0.62rem;
+}
+
+.product-list2-mobile-tablet-laptop-productInfo-price-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: fit-content;
+  height: fit-content;
+}
+
+.product-list2-mobile-tablet-laptop-productInfo-productPrice-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 0.5rem;
+}
+
+.product-list2-mobile-tablet-laptop-productInfo-realPrice {
+  color: grey;
+  font-size: 0.87rem;
+  text-decoration: line-through;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 0.62rem;
+}
+
+.product-list2-mobile-tablet-laptop-productInfo-discountPrice {
+  font-size: 1rem;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 0.62rem;
+}
+
+.product-list2-mobile-tablet-laptop-productInfo-discountPercentage {
+  color: rgb(38, 165, 65);
+  font-size: 0.93rem;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 0.5rem;
+}
+
+.product-list2-mobile-tablet-laptop-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  list-style-type: unset;
+  width: fit-content;
+  height: 6rem;
+  margin-top: 0.81rem;
+  overflow-y: scroll;
+}
+
+.product-list2-mobile-tablet-laptop-description li {
+  margin-bottom: 0.1rem;
+}
+
+.product-list2-mobile-tablet-laptop-description::-webkit-scrollbar {
+  height: 0rem;
+}
+
+/* Media Query ===================================================================================*/
+@media (max-width: 1200px) {
+  #product-list2-box {
+    width: 40.93rem;
+  }
+
+  .product-list2-left-div {
+    width: 10.5rem;
+  }
+
+  .product-list2-img-div {
+    width: 10.5rem;
+  }
+
+  .product-list2-img {
+    max-width: 10rem;
+    max-height: 10.5rem;
+  }
+
+  .product-list2-middle-div {
+    width: 19rem;
+  }
+
+  .product-list2-productName {
+    width: 17.56rem;
+  }
+
+  .product-list2-productRatings {
+    width: 17.56rem;
+  }
+
+  .product-list2-right-div {
+    width: 11rem;
+  }
+
+  .product-list2-right-top-div {
+    width: 9rem;
+    height: fit-content;
+  }
+
+  .product-list2-flipkart-assured-img-div {
+    width: fit-content;
+    margin-top: 0.2rem;
+    margin-left: 0rem;
+  }
+
+  .product-list2-flipkart-assured-img {
+    width: 4rem;
+    height: fit-content;
+  }
+
+  .product-list2-exchange-para {
+    width: 10rem;
+  }
+
+  .product-list2-bank-offer {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #product-list2 {
+    width: 46.7rem;
+    margin-top: 3.5rem;
+    margin-left: 0.62rem;
+  }
+
+  #product-list2-box {
+    display: none;
+  }
+
+  #product-list2-mobile-tablet-laptop-box {
+    display: flex;
+  }
+
+  .product-list2-flipkart-assured-img-div {
+    margin-left: 0.5rem;
+  }
+
+  .product-list2-flipkart-assured-img {
+    width: 3.5rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #product-list2 {
+    width: 35.7rem;
+    margin-top: 3.5rem;
+    margin-left: 0.62rem;
+  }
+
+  #product-list2-box {
+    display: none;
+  }
+
+  #product-list2-mobile-tablet-laptop-box {
+    display: flex;
+    width: 32.45rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-left-div {
+    width: 11rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-img-div {
+    width: 11rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-img {
+    max-width: 10rem;
+    max-height: 10rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-middle-div {
+    width: 21.4rem;
+  }
+
+  .product-list2-flipkart-assured-img {
+    width: 3.5rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #product-list2 {
+    padding: 0.7rem;
+    width: 22.7rem;
+    margin-top: 3rem;
+    margin-left: 0.62rem;
+  }
+
+  #product-list2-box {
+    display: none;
+  }
+
+  .product-list2-flipkart-assured-img-div {
+    height: 1rem;
+    margin-left: 0rem;
+    margin-top: 0.4rem;
+  }
+
+  .product-list2-flipkart-assured-img {
+    width: 3rem;
+    height: 0.9rem;
+  }
+
+  #product-list2-mobile-tablet-laptop-box {
+    display: flex;
+    width: 21.3rem;
+    height: 9rem;
+    padding: 1rem 0rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-left-div {
+    width: 8rem;
+    height: fit-content;
+  }
+
+  .product-list2-mobile-tablet-laptop-img-div {
+    width: 8rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-img {
+    max-width: 6.5rem;
+    max-height: 6.5rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-middle-div {
+    width: 13.2rem;
+    height: fit-content;
+  }
+
+  .product-list2-mobile-tablet-laptop-productName {
+    font-size: 0.9rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-productInfo-productRatings {
+    font-size: 0.7rem;
+    margin-top: 0.37rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-productRatings-box {
+    border-radius: 0.2rem;
+    font-size: 0.55rem;
+    width: fit-content;
+    padding: 0rem 0.3rem 0.12rem 0.3rem;
+    margin-right: 0.3rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-productInfo-productPrice-div {
+    margin-top: 0.2rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-productInfo-realPrice {
+    font-size: 0.75rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-productInfo-discountPrice {
+    font-size: 0.85rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-productInfo-discountPercentage {
+    font-size: 0.75rem;
+  }
+
+  .product-list2-mobile-tablet-laptop-description {
+    display: none;
+  }
+}
