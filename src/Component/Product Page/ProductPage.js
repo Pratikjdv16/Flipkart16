@@ -25,7 +25,7 @@ const ProductPage = () => {
   });
 
   const loginData = useSelector((state) => {
-    return state.Slice6;
+    return state.Slice6.saveLoginInfo;
   });
 
   const dispatch = useDispatch();
@@ -109,7 +109,7 @@ const ProductPage = () => {
                 </div>
               </NavLink>
 
-              {loginData.saveLoginInfo == [] ? (
+              {loginData.length === 0 ? (
                 <div
                   className="left-product-page-buy-btn"
                   style={{ background: "grey" }}
@@ -254,7 +254,7 @@ const ProductPage = () => {
                   </div>
                 </NavLink>
 
-                {loginData.saveLoginInfo == [] ? (
+                {loginData.length === 0 ? (
                   <div className="right-product-page-buy-btn">
                     <span>
                       <img src={Buy_Now} alt="" />
