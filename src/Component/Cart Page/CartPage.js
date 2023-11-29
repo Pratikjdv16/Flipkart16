@@ -34,7 +34,7 @@ const CartPage = () => {
 
   useEffect(() => {
     localStorage.setItem("cartProducts", JSON.stringify(cartData));
-  }, []);
+  }, [cartData]);
 
   return (
     <>

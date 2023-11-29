@@ -26,7 +26,7 @@ const Navbar = () => {
   });
 
   const loginData = useSelector((state) => {
-    return state.Slice6;
+    return state.Slice6.saveLoginInfo;
   });
 
   const dispatch = useDispatch();
@@ -35,8 +35,8 @@ const Navbar = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    localStorage.setItem("username", JSON.stringify(loginData.saveLoginInfo));
-  }, []);
+    localStorage.setItem("username", JSON.stringify(loginData));
+  }, [loginData]);
 
   return (
     <>
@@ -116,7 +116,7 @@ const Navbar = () => {
           </div>
 
           {/* Login-button  */}
-          {loginData.saveLoginInfo === "" ? (
+          {loginData === "" ? (
             <div
               className="login-link navbar-class"
               onClick={() => {
@@ -146,7 +146,7 @@ const Navbar = () => {
                     height: "1rem",
                   }}
                 >
-                  {loginData.saveLoginInfo[0]}
+                  {loginData[0]}
                 </span>
               </div>
               <div className="login-hover">
