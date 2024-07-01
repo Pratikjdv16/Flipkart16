@@ -11,16 +11,22 @@ const regex = {
   captchaRegex: /^[0-9]{3}$/,
 };
 
-const deliveryData = localStorage.getItem("DeliveryInfo");
-const getDeliveryData = JSON.parse(deliveryData);
+// const deliveryData = localStorage.getItem("DeliveryInfo");
+// const getDeliveryData = JSON.parse(deliveryData);
 
-const deliveryProduct = localStorage.getItem("DeliveryProduct");
-const getDeliveryProduct = JSON.parse(deliveryProduct);
+const getLocalDeliveryProduct = () => {
+  const deliveryProduct = localStorage.getItem("DeliveryProduct");
+  if (deliveryProduct == []) {
+    return [];
+  } else {
+    return JSON.parse(deliveryProduct);
+  }
+};
 
 const PaymentSlice = createSlice({
   name: "Slice7",
   initialState: {
-    buyProducts: [...getDeliveryProduct],
+    buyProducts: getLocalDeliveryProduct(),
     style: {
       addressDisplay: false,
       productListDisplay: true,
@@ -32,7 +38,15 @@ const PaymentSlice = createSlice({
       totalDiscountPrice: 0,
       totalPrice: 0,
     },
-    formData: { ...getDeliveryData },
+    formData: {
+      userName: "",
+      mobile_no: "",
+      pinCode: "",
+      state: "",
+      address: "",
+      city: "",
+      locality: "",
+    },
     formError: {
       nameError: false,
       mobileError: false,
@@ -57,11 +71,9 @@ const PaymentSlice = createSlice({
   reducers: {
     setBuyProduct: (state, action) => {
       let data = action.payload;
+      console.log(data);
       state.buyProducts = [...data];
-      localStorage.setItem(
-        "DeliveryProduct",
-        JSON.stringify(state.buyProducts)
-      );
+      console.log(state.buyProducts);
     },
 
     setPaymentDisplay: (state, action) => {
@@ -78,12 +90,9 @@ const PaymentSlice = createSlice({
         if (state.style.productListDisplay === true) {
           state.confirmation.deliveryProductConfirm = true;
           state.style.productListDisplay = false;
-          console.log(true, "productList");
         } else {
-          state.confirmation.deliveryProductConfirm = false;
           state.style.productListDisplay = true;
           state.style.paymentDisplay = false;
-          console.log(false, "productList");
         }
       }
 
@@ -277,8 +286,6 @@ const PaymentSlice = createSlice({
           localityError: true,
           addressError: true,
         };
-        state.confirmation.deliveryInfoConfirm = false;
-        console.log(false, "address");
       } else if (state.formData.userName === "") {
         state.formError.nameError = true;
       } else if (state.formData.mobile_no === "") {
@@ -293,9 +300,8 @@ const PaymentSlice = createSlice({
         state.formError.addressError = true;
       } else {
         state.paymentInfo = { ...state.formData };
-        localStorage.setItem("DeliveryInfo", JSON.stringify(state.paymentInfo));
+        // localStorage.setItem("DeliveryInfo", JSON.stringify(state.paymentInfo));
         state.confirmation.deliveryInfoConfirm = true;
-        console.log(true, "address");
         state.style.addressDisplay = false;
       }
     },

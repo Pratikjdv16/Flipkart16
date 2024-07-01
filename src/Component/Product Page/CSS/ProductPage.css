@@ -402,7 +402,7 @@
   align-items: center;
   color: white;
   background: #fb641b;
-  border: 0.06rem solid #fb641b;
+  /* border: 0.06rem solid #fb641b; */
   border-radius: 0.12rem;
   font-size: 0.93rem;
   width: 13.56rem;

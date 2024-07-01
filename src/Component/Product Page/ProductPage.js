@@ -109,10 +109,10 @@ const ProductPage = () => {
                 </div>
               </NavLink>
 
-              {loginData.length === 0 ? (
+              {loginData == [] ? (
                 <div
                   className="left-product-page-buy-btn"
-                  style={{ background: "grey" }}
+                  style={{ background: "grey", cursor: "no-drop" }}
                 >
                   <span>
                     <img src={Buy_Now} alt="" />
@@ -254,8 +254,11 @@ const ProductPage = () => {
                   </div>
                 </NavLink>
 
-                {loginData.length === 0 ? (
-                  <div className="right-product-page-buy-btn">
+                {loginData == [] ? (
+                  <div
+                    className="right-product-page-buy-btn"
+                    style={{ background: "grey", cursor: "no-drop" }}
+                  >
                     <span>
                       <img src={Buy_Now} alt="" />
                     </span>
@@ -266,7 +269,7 @@ const ProductPage = () => {
                     <div
                       className="right-product-page-buy-btn"
                       onClick={() => {
-                        dispatch(setBuyProduct(ProductData[id]));
+                        dispatch(setBuyProduct([ProductData[id]]));
                       }}
                     >
                       <span>

@@ -146,7 +146,7 @@ const Navbar = () => {
                     height: "1rem",
                   }}
                 >
-                  {loginData[0]}
+                  {loginData}
                 </span>
               </div>
               <div className="login-hover">

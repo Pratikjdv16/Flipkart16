@@ -1,8 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-let getUser = localStorage.getItem("username");
-let userStore = JSON.parse(getUser);
-// console.log(userStore);
+const getLocalLoginData = () => {
+  let getUser = localStorage.getItem("username");
+  if (getUser == []) {
+    return [];
+  } else {
+    let login = JSON.parse(getUser);
+    return login;
+  }
+};
 
 let emailReg = /^[a-z][a-z0-9]{3,}@[gmail]{5}[.a-z]{2,}[.a-z]{2,}$/;
 
@@ -16,7 +22,7 @@ const LoginSlice = createSlice({
       borderBottomColor: "#e0e0e0",
     },
     loginInformation: "",
-    saveLoginInfo: userStore,
+    saveLoginInfo: getLocalLoginData(),
     loginInfoError: undefined,
   },
   reducers: {
@@ -72,7 +78,7 @@ const LoginSlice = createSlice({
 
       if (emailReg.test(state.loginInformation)) {
         state.loginInfoError = true;
-        state.saveLoginInfo = username;
+        state.saveLoginInfo = [username[0]];
         localStorage.setItem("username", JSON.stringify(state.saveLoginInfo));
         state.loginInformation = "";
         state.style.LoginDisplay = "none";

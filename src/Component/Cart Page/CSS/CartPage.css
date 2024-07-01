@@ -108,13 +108,16 @@ body {
 }
 
 .cart-left-deliveryPincode {
-  color: #2874f0;
   background: white;
   border: 0.06rem solid #e0e0e0;
   border-radius: 0.25rem;
   font-size: 0.81rem;
   width: 10.25rem;
   height: 2.31rem;
+}
+
+.cart-left-deliveryPincode span {
+  color: #2874f0;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -344,7 +347,7 @@ body {
 .cart-left-productInfo-placeOrder-btn {
   color: white;
   background: #fb641b;
-  border: 0.06rem solid #fb641b;
+  border: none;
   border-radius: 0.12rem;
   font-size: 1rem;
   width: 15.62rem;
@@ -369,7 +372,7 @@ body {
 .cart-left-productInfo-placeOrder-btn {
   color: white;
   background: #fb641b;
-  border: 0.06rem solid #fb641b;
+  border: none;
   border-radius: 0.12rem;
   font-size: 1rem;
   width: 15.62rem;

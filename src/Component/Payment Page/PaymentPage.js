@@ -600,11 +600,11 @@ const PaymentPage = () => {
                 className="payment-section"
                 onClick={() => {
                   if (
-                    confirmation.deliveryInfoConfirm === false &&
-                    confirmation.deliveryProductConfirm === false
+                    confirmation.deliveryInfoConfirm === true &&
+                    confirmation.deliveryProductConfirm === true
                   ) {
-                  } else {
                     dispatch(setPaymentDisplay("payment"));
+                  } else {
                   }
                 }}
               >

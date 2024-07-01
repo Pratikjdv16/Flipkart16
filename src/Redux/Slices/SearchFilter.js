@@ -12,7 +12,6 @@ const SearchFilter = createSlice({
   },
   reducers: {
     getProducts: (state, actions) => {
-      // console.log("search Products");
       state.searchProducts = actions.payload; // sab products ka data liya
     },
     setFilterProducts: (state, action) => {
@@ -20,9 +19,8 @@ const SearchFilter = createSlice({
       if (state.searchValue !== "") {
         state.style.display = "flex";
         state.filterItems = state.searchProducts.filter((value) => {
-          return value.name.toLowerCase().includes(state.searchValue);
+          return value.name.includes(state.searchValue);
         });
-        console.log(state.filterItems);
       } else {
         state.style.display = "none";
       }

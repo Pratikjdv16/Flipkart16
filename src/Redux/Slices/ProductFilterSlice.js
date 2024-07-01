@@ -14,7 +14,7 @@ const ProductFilterSlice = createSlice({
 
       BrandBgColor: "transparent",
       RatingBgColor: "transparent",
-      CategoryBgColor: "transparent",
+      CategoryBgColor: "transparent",   
       DiscountBgColor: "transparent",
 
       BrandTransform: "rotate(0deg) rotate(270deg)",

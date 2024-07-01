@@ -27,6 +27,14 @@ const CartPage = () => {
     return state.Slice5.removePopUp;
   });
 
+  const loginData = useSelector((state) => {
+    return state.Slice6.saveLoginInfo;
+  });
+
+  const paymentData = useSelector((state) => {
+    return state.Slice7.formData;
+  });
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setTotalPrice());
@@ -88,7 +96,11 @@ const CartPage = () => {
                 </div>
                 <div>
                   <button className="cart-left-deliveryPincode">
-                    Enter Delivery Pincode
+                    {paymentData ? (
+                      <span>Delivery Pincode</span>
+                    ) : (
+                      paymentData.pinCode
+                    )}
                   </button>
                 </div>
               </div>
@@ -199,16 +211,26 @@ const CartPage = () => {
               })}
 
               <div className="cart-left-productInfo-placeOrder">
-                <NavLink to={"/paymentPage"}>
+                {loginData == [] ? (
                   <button
                     className="cart-left-productInfo-placeOrder-btn"
-                    onClick={() => {
-                      dispatch(setBuyProduct(cartData));
-                    }}
+                    style={{ background: "grey", cursor: "no-drop" }}
                   >
                     PLACE ORDER
                   </button>
-                </NavLink>
+                ) : (
+                  <NavLink to={"/paymentPage"}>
+                    <button
+                      className="cart-left-productInfo-placeOrder-btn"
+                      onClick={() => {
+                        console.log(cartData);
+                        dispatch(setBuyProduct(cartData));
+                      }}
+                    >
+                      PLACE ORDER
+                    </button>
+                  </NavLink>
+                )}
               </div>
             </div>
 

@@ -973,6 +973,10 @@
     margin-bottom: 1rem;
   }
 
+  .input-box button {
+    margin-top: 1rem;
+  }
+
   .addressBox {
     margin-bottom: 1rem;
   }
